@@ -1,0 +1,153 @@
+@import "libs/vars";
+@import "libs/functions";
+@import "libs/mixins";
+@import "libs/vendor";
+@import "libs/breakpoints";
+@import "libs/html-grid";
+@import url("fontawesome-all.min.css");
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400italic,700,900");
+
+header,
+nav,
+h1,
+li {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+header,
+nav {
+  display: block;
+}
+
+/* Header */
+#header {
+  display: -moz-flex;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  -moz-align-items: center;
+  -webkit-align-items: center;
+  -ms-align-items: center;
+  align-items: center;
+  -moz-justify-content: center;
+  -webkit-justify-content: center;
+  -ms-justify-content: center;
+  justify-content: center;
+  position: relative;
+  height: 24em;
+  padding: 0;
+}
+
+#header:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url("./images/cupcakes-1283821__340.webp");
+}
+/*fin header*/
+/*logo*/
+#logo {
+  width: 100%;
+  text-align: center;
+  position: relative;
+  top: 1.5 em;
+}
+
+#logo h1 {
+  margin-top: 10em;
+  font-weight: 900;
+  text-transform: uppercase;
+  color: black;
+  font-size: 2em;
+  letter-spacing: 0.25em;
+}
+/*fin logo*/
+/* Nav */
+
+#nav {
+  position: absolute;
+  display: block;
+  top: 2.5em;
+  left: 0;
+  width: 100%;
+  text-align: center;
+}
+#nav > ul {
+  margin-top: 13em;
+  display: inline-block;
+  border-radius: 0.35em;
+  box-shadow: inset 0px 0px 1px 1px black;
+  padding: 0 1.5em 0 1.5em;
+}
+
+#nav > ul > li {
+  display: inline-block;
+  text-align: center;
+  padding: 0 1.5em 0 1.5em;
+}
+
+#nav > ul > li > ul {
+  display: none;
+}
+
+#nav > ul > li > a,
+#nav > ul > li > span {
+  display: block;
+  color: black;
+  color: black;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 0.7em;
+  letter-spacing: 0.25em;
+  height: 5em;
+  line-height: 5em;
+  -moz-transition: all 0.25s ease-in-out;
+  -webkit-transition: all 0.25s ease-in-out;
+  -o-transition: all 0.25s ease-in-out;
+  -ms-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+  outline: 0;
+}
+
+#nav > ul > li:hover > a {
+  color: black;
+}
+
+#nav > ul > li.active > a,
+#nav > ul > li.active > span {
+  color: black;
+}
+/*fin nav/
+
+/* Main */
+/*Seccion 1 */
+
+.title {
+  display: none;
+  font-size: 0.9em;
+  width: 18em;
+  height: 2.5em;
+  top: -2.5em;
+  line-height: 2.5em;
+  margin-bottom: -2.5em;
+  margin-left: -9em;
+  padding-top: 0.5em;
+}
+
+/* Container */
+
+.container {
+  margin: 0 auto;
+  text-align: center;
+}
+
+/*fin container*/
+
+/*fin seccion1 */
